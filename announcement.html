@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title> announcements </title>
+        <link rel="stylesheet" href="main.css"> 
+    </head>
+    
+    <body onload="viewPost()">
+        
+        <!-- heading --> 
+        <div> 
+            <h1> announcements </h1>  
+        </div> 
+        
+         
+         <!-- table set-up for filters menu   --> 
+         <h2 class="choice-title"> Customize Your Announcements </h2>
+        <table border="1px"> 
+        <!--titles for chart --> 
+            <tr> 
+             <td>Club </td>
+             <td> Gender </td>
+             </tr>
+         
+         
+         <!-- drop-down options bars --> 
+         
+         <!--club filter bar --> 
+            <tr> 
+                 <td>
+                    <div class= "postbox-choice">
+                        <select id="clubnamestudent" class="createapostbox-choice" type="text" placeholder= "Club Name"> 
+                              <option>All</option>
+                              <option>Tech</option>
+                              <option>Photography</option>
+                              <option>Events</option>
+                              <option>Cricket</option>
+                              <option>Arts</option>
+                              
+                        </select> <br><br>
+                    </div>
+                </td>
+            
+            <!-- gender filter bar --> 
+                 <td>
+                    <div class= "postbox-choice2">
+                        <select class="genderpick" id="genderstudent" type="text"> 
+                            <option>All</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            
+                        </select><br><br>
+                    </div>
+                 </td>
+             </tr>
+        </table>
+      
+      
+      <!-- Update Button --> 
+      <button onclick="viewPost()"> Reload! </button>
+    
+        <!-- Annnouncements Table --> 
+        
+        <table border="1px"> 
+        
+        <!-- Headings --> 
+        <th> <h2> Clubname </h2></th>
+        <th> <h2> Gender </h2></th>
+        <th> <h2> Date </h2></th>
+        <th> <h2> Category </h2></th>
+        <th> <h2> Annnouncement </h2></th>
+        
+        <!-- rows --> 
+        <tr> 
+            <td id="clubname"> </td>
+            <td id="gender"> </td>
+            <td id="date"> </td>
+            <td id="Category"> </td>
+            <td id="announcement"> </td> 
+        </tr>
+        </table>
+        
+    
+
+
+    <!-- javascripts -->     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
+    <script type="text/javascript" src="ak.js"></script>
+   
+     </body>
+
+</html>
+
+
+
